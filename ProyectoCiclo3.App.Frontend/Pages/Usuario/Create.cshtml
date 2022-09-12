@@ -7,27 +7,24 @@
 <form method = "POST">
   <label asp-for="Usuario.nombre" class="form-label">nombre:</label>
   <input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombre" required minlength="3"  asp-for="Usuario.nombre">
-  <span class="text-danger" asp-validation-for="Encomienda.descripcion"></span> <br>
-  <label for="peso" class="form-label">peso:</label>
-  <input type="number" class="form-control" id="peso" name="peso" placeholder="peso" asp-for="Encomienda.peso">
-  <span class="text-danger" asp-validation-for="Encomienda.descripcion"></span> <br>
-  <label for="tipo" class="form-label">tipo:</label>
-  <select name="tipo" id="tipo" class="form-control" asp-for="Encomienda.tipo">
-    <option value="">-</option>
-    <option value="Ropa">Ropa</option>
-    <option value="Alimentos">Alimentos</option>
-    <option value="Electronicos">Electronicos</option>
-  </select>
-  <span class="text-danger" asp-validation-for="Encomienda.descripcion"></span> <br>
-  <label for="presentacion" class="form-label">presentacion:</label>
-  <select name="presentacion" id="presentacion" class="form-control" asp-for="Encomienda.presentacion">
-    <option value="">-</option>
-    <option value="Sobre">Sobre</option>
-    <option value="Caja">Caja</option>
-    <option value="Guacal">Guacal</option>
-  </select>
-  <span class="text-danger" asp-validation-for="Encomienda.descripcion"></span> <br>
-  <hr>
+  <span class="text-danger" asp-validation-for="Usuario.nombre"></span> <br>
+
+  <label for="apellido" class="form-label">apellido:</label>
+  <input type="text" class="form-control" id="apellido" name="apellido" placeholder="apellido" asp-for="Usuario.apellido">
+  <span class="text-danger" asp-validation-for="Usuario.descripcion"></span> <br>
+  
+  <label for="direccion" class="form-label">direccion:</label>
+  <input type="text" class="form-control" id="direccion" name="direccion" placeholder="direccion" asp-for="Usuario.direccion">
+  <span class="text-danger" asp-validation-for="Usuario.direccion"></span> <br>
+  
+  <label for="telefono" class="form-label">telefono:</label>
+  <input type="number" class="form-control" id="telefono" name="telefono" placeholder="telefono" asp-for="Usuario.telefono">
+  <span class="text-danger" asp-validation-for="Usuario.telefono"></span> <br>
+
+  <label for="ciudad" class="form-label">ciudad:</label>
+  <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="ciudad" asp-for="Usuario.ciudad">
+  <span class="text-danger" asp-validation-for="Usuario.ciudad"></span> <br>
+   <hr>
   <button type="submit" class="btn btn-success">Enviar</button>
 </form>
 </div>
